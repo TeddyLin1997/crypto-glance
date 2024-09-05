@@ -43,7 +43,7 @@ const ConntectWalletDialog = ({ isOpen, onClose }: ConntectWalletDialogProps) =>
         {walletList.length > 0 && walletList.map(wallet => (
           <div
             key={wallet.uuid}
-            className="mb-3 px-4 py-2 flex items-center gap-3 border border-gray-1 rounded-lg hover:bg-primary-light cursor-pointer"
+            className="mb-3 px-4 py-2 flex items-center gap-3 border border-gray-1 rounded-lg hover:bg-black hover:text-white cursor-pointer"
             onClick={() => handleWallet(wallet)}
           >
             <img src={wallet.icon} className="w-8 h-8" />

@@ -15,6 +15,7 @@ type ChainInfo = {
     name: string
     icon: string
   }
+  nativeTokenAddress?: string
 }
 
 export const CHAIN_INFO: { [props: number]: ChainInfo } = {
@@ -27,7 +28,8 @@ export const CHAIN_INFO: { [props: number]: ChainInfo } = {
     coin: {
       name: 'ETH',
       icon: ethereum,
-    }
+    },
+    nativeTokenAddress: '0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2',
   },
   [Chain.Sepolia]: {
     icon: ethereum,
@@ -39,7 +41,8 @@ export const CHAIN_INFO: { [props: number]: ChainInfo } = {
     coin: {
       name: 'SepoliaETH',
       icon: ethereum,
-    }
+    },
+    nativeTokenAddress: '0xC558DBdd856501FCd9aaF1E62eae57A9F0629a3c',
   },
 }
 

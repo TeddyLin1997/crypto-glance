@@ -3,16 +3,12 @@ import Assets from './assets'
 import Chart from './chart'
 import TotalValue from './total-value'
 import ConntectWalletDialog from '@/components/connect-wallet-dialog'
-import { useState } from 'react'
 import WalletContainer from '@/context/wallet-context'
-
+import { useState } from 'react'
 
 const Home = () => {
-
   const [isOpenConnectDialog, setIsOpenConnectDialog] = useState(false)
-
   const { account, isConnect, disconnect } = WalletContainer.useContainer()
-
 
   return (
     <>
@@ -29,13 +25,12 @@ const Home = () => {
                 </div>
               </div>
               :
-              <div className="p-2 font-bold border cursor-pointer hover:bg-white hover:text-black" onClick={() => setIsOpenConnectDialog(true)}>
+              <div className="p-2 font-bold border rounded cursor-pointer hover:bg-white hover:text-black" onClick={() => setIsOpenConnectDialog(true)}>
                 Connect Wallet
               </div>
             }
 
           </div>
-
         </header>
 
         <Assets />
