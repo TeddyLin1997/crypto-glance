@@ -22,12 +22,14 @@ const useWallet = () => {
 
   // connect account
   const [account, setAccount] = useState(initWalletContext.account)
+  const [accounts, setAccounts] = useState([])
   const connect = async (proxyProvider: any) => {
     if (!proxyProvider) return
     try {
 
       const accounts = await proxyProvider.request({ method: 'eth_requestAccounts' })
       setAccount(checksumAddress(accounts[0]))
+      setAccounts(accounts)
       setIsConnect(true)
       setEthereum(proxyProvider)
 
@@ -145,7 +147,7 @@ const useWallet = () => {
     setIsConnect(false)
   }
 
-  return { isSigner, signer, account, chainId, provider, balance, isConnect, connect, switchChain, disconnect }
+  return { isSigner, signer, account, chainId, provider, balance, setBalance, isConnect, connect, switchChain, disconnect, accounts }
 }
 
 const WalletContainer = createContainer(useWallet)

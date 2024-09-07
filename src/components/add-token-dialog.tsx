@@ -19,7 +19,7 @@ const AddTokenDialog = ({ isOpen, onClose, addToken }: AddTokenDialogProps) => {
 
   return (
     <Dialog open={isOpen} onClose={onClose}>
-      <DialogTitle sx={{ fontSize: '18px', textAlign: 'center' }}>Connect Wallet</DialogTitle>
+      <DialogTitle sx={{ fontSize: '18px', textAlign: 'center' }}>Add Token</DialogTitle>
       <DialogContent>
         <TextField value={tokenAddressInput} onChange={handleInput} className="!my-6 w-96" color="success" placeholder="0xAC15...." />
 

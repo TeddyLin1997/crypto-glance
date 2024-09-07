@@ -3,4 +3,5 @@ type TokenInfo = {
   symbol: string
   balance: string
   price: number
+  decimals: number
 }
