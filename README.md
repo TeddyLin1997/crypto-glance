@@ -1,8 +1,7 @@
 # Crypto Glance
 
 - GitHub 儲存庫連結
-
-[https://github.com/TeddyLin1997/crypto-glance](https://github.com/TeddyLin1997/crypto-glance)
+  - [https://github.com/TeddyLin1997/crypto-glance](https://github.com/TeddyLin1997/crypto-glance)
 
 - 自述文件中的設定和運作說明
   -  下載至本地 `git clone https://github.com/TeddyLin1997/crypto-glance`
@@ -45,6 +44,5 @@
     透過配置`prefers-color-scheme`屬性，捕獲用戶OS使用的暗/亮色模式，使用相應的樣式。
 
 - 應用程式部署到 Vercel
-
-[https://crypto-glance-psi.vercel.app/](https://crypto-glance-psi.vercel.app/)
+  - [https://crypto-glance-psi.vercel.app/](https://crypto-glance-psi.vercel.app/)
 
